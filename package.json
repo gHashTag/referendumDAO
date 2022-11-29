@@ -10,12 +10,14 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@cosmjs/stargate": "^0.29.4",
     "@react-native-clipboard/clipboard": "^1.11.1",
     "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/netinfo": "^9.3.6",
     "@react-navigation/bottom-tabs": "^6.4.1",
     "@react-navigation/native": "^6.0.14",
     "@react-navigation/native-stack": "^6.9.2",
+    "cosmjs-types": "^0.5.2",
     "react": "18.1.0",
     "react-native": "0.70.6",
     "react-native-dotenv": "^3.4.2",

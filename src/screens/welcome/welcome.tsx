@@ -21,6 +21,7 @@ import {Inline, Spacer, Text} from 'src/components/ui';
 import {Button, ButtonSize, ButtonVariant} from 'src/components/ui/Button';
 
 import {useTypedNavigation} from 'src/hooks';
+import {Screens} from 'src/types';
 
 const data = [
   {
@@ -49,7 +50,7 @@ const Logo = () => {
 };
 
 export const WelcomeScreen = () => {
-  const navigation = useTypedNavigation();
+  const {navigate} = useTypedNavigation();
   const {top, bottom} = useSafeAreaInsets();
   const {width} = useWindowDimensions();
   const scrollRef = useRef<Animated.ScrollView>(null);
@@ -69,6 +70,10 @@ export const WelcomeScreen = () => {
   const lineAnimation = useAnimatedStyle(() => ({
     width: interpolate(scrollX.value, scrollRange, [0, maxLine], 'clamp'),
   }));
+
+  const onPressImportWallet = () => {
+    navigate(Screens.importWallet);
+  };
 
   const onPressLeft = () => {
     scrollRef.current?.scrollTo({
@@ -147,7 +152,11 @@ export const WelcomeScreen = () => {
         ]}>
         <Button variant={ButtonVariant.contained} title="Create wallet" />
         <Spacer height={13} />
-        <Button variant={ButtonVariant.contained} title="Import mnemonic" />
+        <Button
+          variant={ButtonVariant.contained}
+          onPress={onPressImportWallet}
+          title="Import mnemonic"
+        />
       </SquircleView>
     </>
   );

@@ -1,5 +1,7 @@
 export type RootStackParamList = {
   WELCOME: undefined;
+  IMPORT_WALLET: undefined;
+  CREATE_WALLET: undefined;
 };
 
 export enum AppTheme {
@@ -10,4 +12,6 @@ export enum AppTheme {
 
 export enum Screens {
   welcome = 'WELCOME',
+  importWallet = 'IMPORT_WALLET',
+  createWallet = 'CREATE_WALLET',
 }
