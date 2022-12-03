@@ -15,3 +15,10 @@ export enum Screens {
   importWallet = 'IMPORT_WALLET',
   createWallet = 'CREATE_WALLET',
 }
+
+export enum BiometryType {
+  faceId = 'FaceID',
+  touchId = 'TouchID',
+  fingerprint = 'Fingerprint',
+  none = 'none',
+}

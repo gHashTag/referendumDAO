@@ -421,6 +421,8 @@ PODS:
   - RNVectorIcons (9.2.0):
     - React-Core
   - SocketRocket (0.6.0)
+  - TouchID (4.4.1):
+    - React
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -495,6 +497,7 @@ DEPENDENCIES:
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - TouchID (from `../node_modules/react-native-touch-id`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -604,6 +607,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-svg"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
+  TouchID:
+    :path: "../node_modules/react-native-touch-id"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -666,6 +671,7 @@ SPEC CHECKSUMS:
   RNSVG: 3a79c0c4992213e4f06c08e62730c5e7b9e4dc17
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  TouchID: ba4c656d849cceabc2e4eef722dea5e55959ecf4
   Yoga: 99caf8d5ab45e9d637ee6e0174ec16fbbb01bcfc
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 

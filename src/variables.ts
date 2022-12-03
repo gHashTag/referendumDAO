@@ -107,8 +107,9 @@ export const HR_GRAY = '#EEEEEE';
 
 export const TRANSPARENT = 'transparent';
 
-export const IS_ANDROID = Platform.OS === 'android';
 export const IS_IOS = Platform.OS === 'ios';
 
-export const GRADIENT_START = {x: 0, y: 0};
-export const GRADIENT_END = {x: 1, y: 1};
+export const PIN_BANNED_TIMEOUT_SECONDS = 60;
+export const PIN_BANNED_ATTEMPTS = 5;
+
+export const USER_LAST_ACTIVITY_TIMEOUT_SECONDS = 900;
