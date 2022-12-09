@@ -10,7 +10,7 @@ export function ImportWalletScreen() {
     console.log('importWallet');
   };
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1}}>
       <Button onPress={goBack} title="go back" />
       <Button onPress={importWallet} title="import wallet" />
     </SafeAreaView>

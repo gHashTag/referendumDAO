@@ -24,7 +24,7 @@ module.exports = {
                 position: 'before',
               },
               {
-                pattern: '@app/**',
+                pattern: 'src/**',
                 group: 'external',
                 position: 'after',
               },
